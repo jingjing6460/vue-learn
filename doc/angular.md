@@ -21,4 +21,18 @@ ModuleInjector, module层次结构中找，找不到，报错
 
 解析修饰符
 
+## 双向数据绑定
+### VUE 
+
+### Angular
+使用双向绑定来侦听事件并在父组件和子组件之间同步更新值。
+双向绑定语法是 [()], []是属性绑定， （）是事件绑定。双向绑定语法是属性绑定与事件绑定的组合的简写形式。
+
+`
+<app-sizer [(size)]="fontSizePx"></app-sizer>
+<app-sizer [size]="fontSizePx" (sizeChange)="fontSizePx=$event"></app-sizer>
+`
+
+表单中的双向数据绑定 需要 NgModel
+
 
