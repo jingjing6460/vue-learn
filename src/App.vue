@@ -1,20 +1,36 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <InputBind data="test data-binding for vue"></InputBind>
+    <router-link to="/demo01">Go to algorithm part</router-link>
+    <router-link to="/index">Go to base javascript part</router-link>
+    <router-view></router-view>
+    <!-- <InputBind data="test data-binding for vue"></InputBind>
+    <bind></bind>
+    <prototype></prototype>
+    <call></call>
+    <apply></apply>
+    <newt></newt> -->
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import InputBind from './components/InputBind.vue'
+// import InputBind from './views/mvvm/InputBind.vue'
+// import bind from './views/javascript/bind.vue'
+// import prototype from './views/javascript/prototype.vue'
+// import call from './views/javascript/call.vue'
+// import apply from './views/javascript/apply.vue'
+// import newt from './views/javascript/new.vue'
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
-  InputBind
+  // InputBind,
+  // bind,
+  // prototype,
+  // call,
+  // apply,
+  // newt,
   }
 }
 </script>
@@ -24,7 +40,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
